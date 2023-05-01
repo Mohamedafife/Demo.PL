@@ -1,0 +1,45 @@
+﻿@model EmployeeViewModel
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Employee Details</h1>
+<div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="Name"></label>
+        <input class="form-control" asp-for="Name" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="Age"></label>
+        <input class="form-control" asp-for="Age" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="Address"></label>
+        <input class="form-control" asp-for="Address" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="IsValed"></label>
+        <input class="form-control" asp-for="IsValed" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="Email"></label>
+        <input class="form-control" asp-for="Email" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="Salary"></label>
+        <input class="form-control" asp-for="Salary" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="PhoneNumber"></label>
+        <input class="form-control" asp-for="PhoneNumber" readonly />
+    </div>
+    <div class="form-group">
+        <label class="col-form-label" asp-for="Hairdata"></label>
+        <input class="form-control" asp-for="Hairdata" readonly />
+    </div>
+    <a asp-controller="Employee" asp-action="Edit" class="btn btn-dark">Edit</a>
+    <a asp-controller="Employee" asp-action="Index" class="btn btn-light">Bact To Master Page</a>
+</div>
+
+
+
